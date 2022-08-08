@@ -4,6 +4,7 @@
 //
 //  Created by Daniil Auhustsinovich on 8.08.22.
 //
+
 import UIKit
 import RealmSwift
 
@@ -15,6 +16,7 @@ class TaskListViewController: UITableViewController {
         super.viewDidLoad()
         taskLists = StorageManager.shared.realm.objects(TaskList.self)
         createTempData()
+        
         let addButton = UIBarButtonItem(
             barButtonSystemItem: .add,
             target: self,
@@ -40,7 +42,8 @@ class TaskListViewController: UITableViewController {
         var content = cell.defaultContentConfiguration()
         let taskList = taskLists[indexPath.row]
         content.text = taskList.name
-        content.secondaryText = "\(taskList.tasks.count)"
+        let filteredTask = taskList.tasks.filter("isComplete = false")
+        content.secondaryText = "\(filteredTask.count != 0 ? "\(filteredTask.count)" : "✔️" )"
         cell.contentConfiguration = content
         return cell
     }
@@ -50,7 +53,7 @@ class TaskListViewController: UITableViewController {
         let taskList = taskLists[indexPath.row]
         
         let deleteAction = UIContextualAction(style: .destructive, title: "Delete") { _, _, _ in
-            StorageManager.shared.delete(taskList)
+            StorageManager.shared.deleteList(taskList)
             tableView.deleteRows(at: [indexPath], with: .automatic)
         }
         
@@ -62,7 +65,7 @@ class TaskListViewController: UITableViewController {
         }
         
         let doneAction = UIContextualAction(style: .normal, title: "Done") { _, _, isDone in
-            StorageManager.shared.done(taskList)
+            StorageManager.shared.doneList(taskList)
             tableView.reloadRows(at: [indexPath], with: .automatic)
             isDone(true)
         }
@@ -82,6 +85,10 @@ class TaskListViewController: UITableViewController {
     }
 
     @IBAction func sortingList(_ sender: UISegmentedControl) {
+        taskLists = sender.selectedSegmentIndex == 0
+            ? taskLists.sorted(byKeyPath: "date")
+            : taskLists.sorted(byKeyPath: "name")
+        tableView.reloadData()
     }
     
     @objc private func addButtonPressed() {
@@ -103,7 +110,7 @@ extension TaskListViewController {
         
         alert.action(with: taskList) { newValue in
             if let taskList = taskList, let completion = completion {
-                StorageManager.shared.edit(taskList, newValue: newValue)
+                StorageManager.shared.editList(taskList, newValue: newValue)
                 completion()
             } else {
                 self.save(taskList: newValue)
@@ -115,7 +122,7 @@ extension TaskListViewController {
     
     private func save(taskList: String) {
         let taskList = TaskList(value: [taskList])
-        StorageManager.shared.save(taskList)
+        StorageManager.shared.saveList(taskList)
         let rowIndex = IndexPath(row: taskLists.index(of: taskList) ?? 0, section: 0)
         tableView.insertRows(at: [rowIndex], with: .automatic)
     }

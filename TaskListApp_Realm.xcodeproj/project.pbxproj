@@ -70,11 +70,11 @@
 		A5A561A228A1413A0008573E /* TaskListApp_Realm */ = {
 			isa = PBXGroup;
 			children = (
-				A5A561CC28A144980008573E /* App */,
 				A5A561CD28A144A10008573E /* Storyboards */,
-				A5A561C628A1445C0008573E /* ViewControllers */,
 				A5A561CE28A144AA0008573E /* Models */,
+				A5A561C628A1445C0008573E /* ViewControllers */,
 				A5A561CB28A1448F0008573E /* Services */,
+				A5A561CC28A144980008573E /* App */,
 				A5A561CF28A144AF0008573E /* Resources */,
 			);
 			path = TaskListApp_Realm;
