@@ -6,10 +6,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Task Lists-->
+        <!--JustToDo List-->
         <scene sceneID="MqX-XB-vkm">
             <objects>
-                <tableViewController id="RRN-fb-3aD" customClass="TaskListViewController" customModule="testRealmApp" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="RRN-fb-3aD" customClass="TaskListViewController" customModule="TaskListApp_Realm" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="tn2-au-T3b">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -59,7 +59,7 @@
                             <outlet property="delegate" destination="RRN-fb-3aD" id="gw2-AS-bx7"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Task Lists" id="t1g-AW-9s4"/>
+                    <navigationItem key="navigationItem" title="JustToDo List" id="t1g-AW-9s4"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M90-2z-SFB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -68,7 +68,7 @@
         <!--Tasks View Controller-->
         <scene sceneID="NHY-hp-tfB">
             <objects>
-                <tableViewController id="RgK-sp-DeQ" customClass="TasksViewController" customModule="testRealmApp" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="RgK-sp-DeQ" customClass="TasksViewController" customModule="TaskListApp_Realm" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="ydu-SM-cup">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -127,6 +127,7 @@
             <point key="canvasLocation" x="-604" y="158"/>
         </scene>
     </scenes>
+    <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
     <resources>
         <systemColor name="groupTableViewBackgroundColor">
             <color red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
