@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  testRealmApp
+//  JustToDoListApp_Realm
 //
 //  Created by Daniil Auhustsinovich on 8.08.22.
 //

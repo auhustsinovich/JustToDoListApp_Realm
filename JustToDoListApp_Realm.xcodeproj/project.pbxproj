@@ -12,14 +12,14 @@
 		A5A561AB28A1413A0008573E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5A561A928A1413A0008573E /* Main.storyboard */; };
 		A5A561AD28A1413C0008573E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5A561AC28A1413C0008573E /* Assets.xcassets */; };
 		A5A561B028A1413C0008573E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5A561AE28A1413C0008573E /* LaunchScreen.storyboard */; };
-		A5A561B928A1420F0008573E /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = A5A561B828A1420F0008573E /* Realm */; };
-		A5A561BB28A1420F0008573E /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = A5A561BA28A1420F0008573E /* RealmSwift */; };
 		A5A561BF28A143FD0008573E /* TaskList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A561BE28A143FD0008573E /* TaskList.swift */; };
 		A5A561C128A1442B0008573E /* TasksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A561C028A1442B0008573E /* TasksViewController.swift */; };
 		A5A561C328A144400008573E /* TaskListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A561C228A144400008573E /* TaskListViewController.swift */; };
 		A5A561C528A144550008573E /* AlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A561C428A144550008573E /* AlertController.swift */; };
 		A5A561C828A144760008573E /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A561C728A144760008573E /* DataManager.swift */; };
 		A5A561CA28A144870008573E /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A561C928A144870008573E /* StorageManager.swift */; };
+		A5EBD2A028A2910D008C71F6 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = A5EBD29F28A2910D008C71F6 /* Realm */; };
+		A5EBD2A228A2910D008C71F6 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = A5EBD2A128A2910D008C71F6 /* RealmSwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,8 +43,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A5A561BB28A1420F0008573E /* RealmSwift in Frameworks */,
-				A5A561B928A1420F0008573E /* Realm in Frameworks */,
+				A5EBD2A228A2910D008C71F6 /* RealmSwift in Frameworks */,
+				A5EBD2A028A2910D008C71F6 /* Realm in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +56,7 @@
 			children = (
 				A5A561A228A1413A0008573E /* JustToDoListApp_Realm */,
 				A5A561A128A1413A0008573E /* Products */,
+				A5EBD29E28A2910D008C71F6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -134,6 +135,13 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		A5EBD29E28A2910D008C71F6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -151,8 +159,8 @@
 			);
 			name = JustToDoListApp_Realm;
 			packageProductDependencies = (
-				A5A561B828A1420F0008573E /* Realm */,
-				A5A561BA28A1420F0008573E /* RealmSwift */,
+				A5EBD29F28A2910D008C71F6 /* Realm */,
+				A5EBD2A128A2910D008C71F6 /* RealmSwift */,
 			);
 			productName = testRealmApp;
 			productReference = A5A561A028A1413A0008573E /* JustToDoListApp_Realm.app */;
@@ -368,7 +376,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = L7M6FD6244;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = TaskListApp_Realm/App/Info.plist;
+				INFOPLIST_FILE = JustToDoListApp_Realm/App/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = JustToDoListApp_Realm;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -397,7 +405,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = L7M6FD6244;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = TaskListApp_Realm/App/Info.plist;
+				INFOPLIST_FILE = JustToDoListApp_Realm/App/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = JustToDoListApp_Realm;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -452,12 +460,12 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		A5A561B828A1420F0008573E /* Realm */ = {
+		A5EBD29F28A2910D008C71F6 /* Realm */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = A5A561B728A1420F0008573E /* XCRemoteSwiftPackageReference "realm-swift" */;
 			productName = Realm;
 		};
-		A5A561BA28A1420F0008573E /* RealmSwift */ = {
+		A5EBD2A128A2910D008C71F6 /* RealmSwift */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = A5A561B728A1420F0008573E /* XCRemoteSwiftPackageReference "realm-swift" */;
 			productName = RealmSwift;

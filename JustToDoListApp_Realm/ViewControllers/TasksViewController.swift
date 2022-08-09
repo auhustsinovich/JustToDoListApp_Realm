@@ -1,6 +1,6 @@
 //
 //  TasksViewController.swift
-//  testRealmApp
+//  JustToDoListApp_Realm
 //
 //  Created by Daniil Auhustsinovich on 8.08.22.
 //
@@ -58,7 +58,10 @@ class TasksViewController: UITableViewController {
         let task = indexPath.section == 0
             ? currentTasks[indexPath.row]
             : completedTasks[indexPath.row]
-        showAlert(with: task)
+        showAlert(with: task) {
+            self.tableView.reloadRows(at: [indexPath], with: .automatic)
+        }
+    
     }
     
     override func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
@@ -105,6 +108,7 @@ class TasksViewController: UITableViewController {
     
     @objc private func addButtonPressed() {
         showAlert()
+        
     }
 
 }

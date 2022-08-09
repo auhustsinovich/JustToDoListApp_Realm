@@ -9,7 +9,7 @@
         <!--JustToDo List-->
         <scene sceneID="MqX-XB-vkm">
             <objects>
-                <tableViewController id="RRN-fb-3aD" customClass="TaskListViewController" customModule="TaskListApp_Realm" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="RRN-fb-3aD" customClass="TaskListViewController" customModule="JustToDoListApp_Realm" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="tn2-au-T3b">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -63,12 +63,12 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M90-2z-SFB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="127" y="158"/>
+            <point key="canvasLocation" x="112" y="157"/>
         </scene>
         <!--Tasks View Controller-->
         <scene sceneID="NHY-hp-tfB">
             <objects>
-                <tableViewController id="RgK-sp-DeQ" customClass="TasksViewController" customModule="TaskListApp_Realm" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="RgK-sp-DeQ" customClass="TasksViewController" customModule="JustToDoListApp_Realm" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="ydu-SM-cup">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
