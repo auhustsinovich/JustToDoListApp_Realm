@@ -23,7 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		A5A561A028A1413A0008573E /* TaskListApp_Realm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TaskListApp_Realm.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5A561A028A1413A0008573E /* JustToDoListApp_Realm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JustToDoListApp_Realm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5A561A328A1413A0008573E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A5A561A528A1413A0008573E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		A5A561AA28A1413A0008573E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -54,7 +54,7 @@
 		A5A5619728A1413A0008573E = {
 			isa = PBXGroup;
 			children = (
-				A5A561A228A1413A0008573E /* TaskListApp_Realm */,
+				A5A561A228A1413A0008573E /* JustToDoListApp_Realm */,
 				A5A561A128A1413A0008573E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -62,12 +62,12 @@
 		A5A561A128A1413A0008573E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A5A561A028A1413A0008573E /* TaskListApp_Realm.app */,
+				A5A561A028A1413A0008573E /* JustToDoListApp_Realm.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A5A561A228A1413A0008573E /* TaskListApp_Realm */ = {
+		A5A561A228A1413A0008573E /* JustToDoListApp_Realm */ = {
 			isa = PBXGroup;
 			children = (
 				A5A561CD28A144A10008573E /* Storyboards */,
@@ -77,7 +77,7 @@
 				A5A561CC28A144980008573E /* App */,
 				A5A561CF28A144AF0008573E /* Resources */,
 			);
-			path = TaskListApp_Realm;
+			path = JustToDoListApp_Realm;
 			sourceTree = "<group>";
 		};
 		A5A561C628A1445C0008573E /* ViewControllers */ = {
@@ -137,9 +137,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A5A5619F28A1413A0008573E /* TaskListApp_Realm */ = {
+		A5A5619F28A1413A0008573E /* JustToDoListApp_Realm */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A5A561B428A1413C0008573E /* Build configuration list for PBXNativeTarget "TaskListApp_Realm" */;
+			buildConfigurationList = A5A561B428A1413C0008573E /* Build configuration list for PBXNativeTarget "JustToDoListApp_Realm" */;
 			buildPhases = (
 				A5A5619C28A1413A0008573E /* Sources */,
 				A5A5619D28A1413A0008573E /* Frameworks */,
@@ -149,13 +149,13 @@
 			);
 			dependencies = (
 			);
-			name = TaskListApp_Realm;
+			name = JustToDoListApp_Realm;
 			packageProductDependencies = (
 				A5A561B828A1420F0008573E /* Realm */,
 				A5A561BA28A1420F0008573E /* RealmSwift */,
 			);
 			productName = testRealmApp;
-			productReference = A5A561A028A1413A0008573E /* TaskListApp_Realm.app */;
+			productReference = A5A561A028A1413A0008573E /* JustToDoListApp_Realm.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -173,7 +173,7 @@
 					};
 				};
 			};
-			buildConfigurationList = A5A5619B28A1413A0008573E /* Build configuration list for PBXProject "TaskListApp_Realm" */;
+			buildConfigurationList = A5A5619B28A1413A0008573E /* Build configuration list for PBXProject "JustToDoListApp_Realm" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -189,7 +189,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A5A5619F28A1413A0008573E /* TaskListApp_Realm */,
+				A5A5619F28A1413A0008573E /* JustToDoListApp_Realm */,
 			);
 		};
 /* End PBXProject section */
@@ -369,7 +369,7 @@
 				DEVELOPMENT_TEAM = L7M6FD6244;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TaskListApp_Realm/App/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = TaskListApp_Realm;
+				INFOPLIST_KEY_CFBundleDisplayName = JustToDoListApp_Realm;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -380,7 +380,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.Auhustsinovich.testRealmApp;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Auhustsinovich.justToDoListApp-Realm";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -398,7 +398,7 @@
 				DEVELOPMENT_TEAM = L7M6FD6244;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TaskListApp_Realm/App/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = TaskListApp_Realm;
+				INFOPLIST_KEY_CFBundleDisplayName = JustToDoListApp_Realm;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -409,7 +409,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.Auhustsinovich.testRealmApp;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Auhustsinovich.justToDoListApp-Realm";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -420,7 +420,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A5A5619B28A1413A0008573E /* Build configuration list for PBXProject "TaskListApp_Realm" */ = {
+		A5A5619B28A1413A0008573E /* Build configuration list for PBXProject "JustToDoListApp_Realm" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A5A561B228A1413C0008573E /* Debug */,
@@ -429,7 +429,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A5A561B428A1413C0008573E /* Build configuration list for PBXNativeTarget "TaskListApp_Realm" */ = {
+		A5A561B428A1413C0008573E /* Build configuration list for PBXNativeTarget "JustToDoListApp_Realm" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A5A561B528A1413C0008573E /* Debug */,
